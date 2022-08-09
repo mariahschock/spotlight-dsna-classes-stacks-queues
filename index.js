@@ -13,6 +13,29 @@ class Stack {
     }
 }
 
-class Queue {}
+class Queue {
+    #list;
+
+    constructor(list) {
+        this.#list = list || [];
+    }
+
+    enqueue(item) {
+        this.#list.push(item);
+    }
+
+    dequeue() {
+        return this.#list.shift();
+    }
+
+    get count() {
+        return this.#list.length;
+    }
+
+    get next() {
+        return this.#list[0];
+    }
+   
+}
 
 module.exports = { Stack, Queue };

@@ -7,7 +7,7 @@ describe("Stack Class", () => {
   });
   // add more tests here...
 
-  it('#queue should add a new item to the queue', () => {
+  it.skip('#queue should add a new item to the queue', () => {
     const queue = new Queue();
     queue.push(1);
     expect(queue.peek()).toEqual(1);

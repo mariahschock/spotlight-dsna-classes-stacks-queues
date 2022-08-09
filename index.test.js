@@ -13,4 +13,23 @@ describe("Stack Class", () => {
     expect(queue.peek()).toEqual(1);
   })
   
+
+
+
+  describe("Queue Class", () => {
+    it("#enqueue should add an item to the back", () => {
+      const queue = new Queue();
+      queue.enqueue("fox");
+      queue.enqueue("goose");
+      expect(queue.count).toBe(2);
+      expect(queue.next).toBe("fox");
+    });
+  });
+  
+
+
+
+
+
+
 });
